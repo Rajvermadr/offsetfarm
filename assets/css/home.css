@@ -1,0 +1,225 @@
+body{
+    background-color: #F2F5EB;
+}
+#banner-part {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+}
+
+#banner-part #myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+
+#banner-part .container{
+z-index: 1;
+position: absolute;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+
+}
+
+.card{
+    border: 1px solid #009A6612;
+    background: linear-gradient(0deg, rgba(254, 254, 254, 0.45), rgba(254, 254, 254, 0.45)),
+linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
+}
+
+#what-we-do .tab-label{
+    position: relative;
+    top: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#what-we-do .tabs{
+    border-radius: 300px;
+    width: fit-content;
+}
+
+#what-we-do .tabs button.btn{
+    border-radius: 300px;
+    color: #f3f3f3;
+    font-family:OpenSans-Light; 
+    transition: 0.4s;
+}
+
+#what-we-do .tabs button.btn.active{
+    color: var(--primary);
+    background-color: var(--light);
+    font-family: OpenSans-Regular;
+    transition: 0.4s;
+}
+
+#tab-content .image-content img{
+    border-radius: 8px;
+}
+
+#tab-content ul {
+    list-style: none;
+}
+
+#tab-content ul li:before{
+    content: "\F2EF"; /* FontAwesome Unicode */
+    font-family: bootstrap-icons;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--secondary);
+    margin-right: 5px;
+}
+
+#tab-content .tab-info{
+    display: none;
+    transition: 0.5s;
+}
+
+#tab-content .tab-info.active{
+    display:block;
+    transition: 0.5s;
+}
+
+#projects .card {
+    background-color: #fff;
+}
+
+#projects .card .card-header{
+    border: none;
+    background: none;
+}
+
+#projects .card .card-header .image-content{
+   overflow: hidden;
+}
+
+#projects .card .card-header img{
+   border-radius: 8px;
+   transition: all 0.3s ease-in-out;
+}
+
+#projects .card .card-header img:hover{
+   transform: scale(1.1);
+}
+
+#projects .card .card-footer{
+    background: none;
+}
+
+#projects .card .card-footer .icon-btn .ic-btn{
+   width: 35px;
+   height: 35px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#projects .card .card-footer .icon-btn .ic-btn .content small{
+   font-size: 3px;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+#projects .card .card-footer .icon-btn .ic-btn .content small.counter{
+   font-size: 0.4rem;
+}
+
+#projects .card .card-footer .icon-btn .ic-btn .icon{
+   font-size: 0.6rem;
+   color: #fff;
+}
+
+#projects .card:hover .card-footer .read-more a{
+   color: var(--secondary);
+}
+
+#sectors .image-part-left .content{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#sectors .image-part-left .content:hover{
+    background-size: 110% 110%;
+    transition: 0.3s;
+}
+
+#sectors .image-part-left .overlay-content{
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    transition: .5s ease;
+    border-radius: 0 0 8px 8px;
+}
+
+#sectors .image-part-right .content{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 292px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#sectors .image-part-right .content:hover{
+    background-size: 110% 110%;
+    transition: 0.3s;
+}
+
+#sectors .image-part-right .overlay-content{
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    transition: .5s ease;
+    border-radius: 0 0 8px 8px;
+}
+
+
+/* ========= OWL CAROWSEL NAV=========== */
+.owl-carousel .owl-nav.disabled {
+display: block !important;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+position: absolute;
+top: 45%;
+left: -20px;
+width: 30px;
+height: 30px;
+background-color: var(--secondary);
+color: #fff;
+font-size: 1.5rem;
+border-radius: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    top: 45%;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary);
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }

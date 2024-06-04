@@ -1,0 +1,98 @@
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 600;
+    src: url('./fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: Poppins;
+    font-weight: 800;
+    src: url('./fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 400;
+    src: url('./fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 300;
+    src: url('./fonts/Poppins-Thin.ttf');
+}
+@font-face {
+    font-family: Poppins;
+    font-weight: 700;
+    src: url('./fonts/Poppins-SemiBold.ttf');
+}
+
+
+/*========  Noto_Sans Fonts ========*/
+@font-face {
+    font-family: NotoSans-Regular;
+    font-weight: 600;
+    src: url('./fonts/Noto_Sans/NotoSans-Regular.ttf');
+}
+@font-face {
+    font-family: NotoSans-Bold;
+    font-weight: 800;
+    src: url('./fonts/Noto_Sans/NotoSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: NotoSans-Light;
+    font-weight: 400;
+    src: url('./fonts/Noto_Sans/NotoSans-Light.ttf');
+}
+
+@font-face {
+    font-family: NotoSans-Thin;
+    font-weight: 300;
+    src: url('./fonts/Noto_Sans/NotoSans-Thin.ttf');
+}
+@font-face {
+    font-family: NotoSans-SemiBold;
+    font-weight: 700;
+    src: url('./fonts/Noto_Sans/NotoSans-SemiBold.ttf');
+}
+
+/* ===== Open Sans Fonts ===== */
+@font-face {
+    font-family: OpenSans-Regular;
+    font-weight: 600;
+    src: url('./fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: OpenSans-Bold;
+    font-weight: 800;
+    src: url('./fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: OpenSans-Medium;
+    font-weight: 500;
+    src: url('./fonts/Open_Sans/OpenSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: OpenSans-Light;
+    font-weight: 400;
+    src: url('./fonts/Open_Sans/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family:OpenSans-SemiBold;
+    font-weight: 700;
+    src: url('./fonts/Open_Sans/OpenSans-SemiBold.ttf');
+}
+
+
+
+
+
+
+
+
+
+
