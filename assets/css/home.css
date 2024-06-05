@@ -61,7 +61,7 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
     transition: 0.4s;
 }
 
-#tab-content .image-content img{
+#tab-content .image-content{
     border-radius: 8px;
 }
 
@@ -69,13 +69,26 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
     list-style: none;
 }
 
-#tab-content ul li:before{
-    content: "\F2EF"; /* FontAwesome Unicode */
+/* #tab-content ul li:before{
+    content: "\F2EF"; 
     font-family: bootstrap-icons;
     display: inline-block;
     font-size: 0.8rem;
     color: var(--secondary);
     margin-right: 5px;
+} */
+
+#tab-content ul li:before{
+    content: ""; 
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/icon.svg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -26px;
 }
 
 #tab-content .tab-info{
@@ -87,6 +100,47 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
     display:block;
     transition: 0.5s;
 }
+
+#tab-content .tab-info .image-content .project-development{
+    min-height: 300px;
+    width: 100%;
+    background-image: url('../images/project-dev-1.png');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    animation: change 6s infinite ease-in-out;
+    border-radius: 8px;
+}
+
+#tab-content .tab-info .image-content .technology{
+    min-height: 300px;
+    width: 100%;
+    background-image: url('../images/technology-1.png');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    animation: technology 6s infinite ease-in-out;
+    border-radius: 8px;
+}
+
+#tab-content .tab-info .image-content .impact-creation{
+    min-height: 300px;
+    width: 100%;
+    background-image: url('../images/impact-creation-1.png');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    animation: impactcreation 6s infinite ease-in-out;
+    border-radius: 8px;
+}
+
+
+
+
+
 
 #projects .card {
     background-color: #fff;
@@ -202,11 +256,18 @@ width: 30px;
 height: 30px;
 background-color: var(--secondary);
 color: #fff;
-font-size: 1.5rem;
+font-size: 1.8rem;
 border-radius: 50px;
-display: flex;
-justify-content: center;
-align-items: center;
+}
+
+.owl-carousel .owl-nav button.owl-prev span{
+    position: relative;
+    top: -8px;
+    right: 1px;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover{
+    background-color: var(--secondary);
 }
 
 .owl-carousel .owl-nav button.owl-next{
@@ -217,9 +278,58 @@ align-items: center;
     height: 30px;
     background-color: var(--secondary);
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover{
+    background-color: var(--secondary);
+}
+
+.owl-carousel .owl-nav button.owl-next span{
+    position: relative;
+    top: -8px;
+    right: -1px;
+}
+
+
+
+/* ============ ANIMATIONS ============== */
+@keyframes change{
+    0%{
+        background-image: url('../images/project-dev-1.png');
     }
+    50%{
+        background-image: url('../images/project-dev-2.png');
+    }
+
+    100%{
+        background-image: url('../images/project-dev-3.png');
+    }
+}
+
+@keyframes technology{
+    0%{
+        background-image: url('../images/technology-1.png');
+    }
+    50%{
+        background-image: url('../images/technology-2.png');
+    }
+
+    100%{
+        background-image: url('../images/technology-3.png');
+    }
+}
+
+@keyframes impactcreation{
+    0%{
+        background-image: url('../images/impact-creation-1.png');
+    }
+    50%{
+        background-image: url('../images/impact-creation-2.png');
+    }
+
+    100%{
+        background-image: url('../images/impact-creation-3.png');
+    }
+}
