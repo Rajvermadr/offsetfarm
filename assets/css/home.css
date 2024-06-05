@@ -35,7 +35,7 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
 
 #what-we-do .tab-label{
     position: relative;
-    top: 18%;
+    top: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,6 +135,11 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
     background-position: center;
     animation: impactcreation 6s infinite ease-in-out;
     border-radius: 8px;
+}
+
+#tab-content p ,#tab-content li{
+    line-height: 1.6em;
+    letter-spacing: 1px;
 }
 
 
