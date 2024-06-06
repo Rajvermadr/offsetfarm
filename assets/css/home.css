@@ -8,6 +8,10 @@ body{
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
 }
 
+.modal-content{
+    border-radius: 16px;
+}
+
 #banner-part #myVideo {
     position: absolute;
     right: 0;
@@ -17,8 +21,18 @@ body{
     z-index: 0;
 }
 
+#banner-part .overlay {
+    position:absolute;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0px;
+    bottom: 0;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(38, 64, 43, 0.80) 0%, rgba(38, 64, 43, 0.49) 23.91%, rgba(38, 64, 43, 0.00) 100%);
+}
+
 #banner-part .container{
-z-index: 1;
+z-index: 2;
 position: absolute;
 right: 0;
 bottom: 0;
@@ -48,17 +62,32 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
 }
 
 #what-we-do .tabs button.btn{
+    position: relative;
     border-radius: 300px;
     color: #f3f3f3;
     font-family:OpenSans-Light; 
     transition: 0.4s;
+    z-index: 2;
+    border: none;
+}
+
+#what-we-do .tabs #button-fill{
+    border-radius: 300px;
+    position: absolute;
+    width: 38%;
+    height: 58px;
+    z-index: 1;
+    background-color: var(--light);
+    transition: 0.4s;
+    left: 3%;
 }
 
 #what-we-do .tabs button.btn.active{
     color: var(--primary);
-    background-color: var(--light);
+    background-color: transparent;
     font-family: OpenSans-Regular;
     transition: 0.4s;
+    z-index: 2;
 }
 
 #tab-content .image-content{
@@ -174,8 +203,8 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
 }
 
 #projects .card .card-footer .icon-btn .ic-btn{
-   width: 35px;
-   height: 35px;
+   width: 33px;
+   height: 33px;
    border-radius: 5px;
    cursor: pointer;
 }
@@ -206,7 +235,7 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
     display: flex;
     justify-content: end;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 24px;
     transition: 0.3s;
 }
 
@@ -230,7 +259,7 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
     display: flex;
     justify-content: end;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 24px;
     transition: 0.3s;
 }
 
@@ -337,4 +366,20 @@ border-radius: 50px;
     100%{
         background-image: url('../images/impact-creation-3.png');
     }
+}
+
+/* =========== RESPONSIVE ============ */
+@media screen and (max-width: 768px) {
+#what-we-do .tabs #button-fill{
+    display: none;
+}
+
+#what-we-do .tabs button.btn.active{
+    color: var(--primary);
+    background-color: #fff;
+    font-family: OpenSans-Regular;
+    transition: 0.4s;
+    z-index: 2;
+}
+
 }

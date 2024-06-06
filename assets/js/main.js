@@ -18,6 +18,22 @@ $(document).ready(function(){
     $('body').delegate('.tabs button.btn', 'click',(e)=>{
 
         let tab=e.target.dataset.tab
+        
+        if(tab==1){
+            $("#button-fill").css("width", "38%");
+            $("#button-fill").css("left", "3%");
+        }
+
+        if(tab==2){
+            $("#button-fill").css("width", "30%");
+            $("#button-fill").css("left", "38%");
+        }
+
+        if(tab==3){
+            $("#button-fill").css("width", "32%");
+            $("#button-fill").css("left", "65%");
+        }
+
         let tab_btn_id=`#tab-btn-${tab}`;
         let tab_id=`#tab-${tab}`;
         $('.tabs button.btn').removeClass('active')

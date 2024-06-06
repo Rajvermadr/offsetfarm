@@ -73,23 +73,44 @@
     color: var(--light);
     border: none;
     transition: 0.4s;
+    z-index: 4;
+    overflow: hidden;
 }
 
 .b-primary:hover{
     background-color: var(--secondary);
     transition: 0.3s;
     color: var(--light);
+    transition: display 3s;
 }
 
-.b-primary span.icon{
-    display: none !important;
-    transition: 0.4s;
+.b-primary:active{
+    background-color: var(--secondary) !important;
+    transition: 0.3s;
+    color: var(--light) !important;
 }
 
-.b-primary:hover span.icon{
-    display: inline !important;
-    transition: 0.4s;
+.b-primary span::after{
+    position: relative;
+    content: "\F285";
+    font-family: bootstrap-icons;
+    font-size: 1rem;
+    top: 3px;
+    color: var(--light);
+    left: 80px;
+    transition: 0.8s;
+    display: inline-block;
+    width: 0;
+    
 }
+
+.b-primary:hover span::after{
+    transition: display 3s;
+    left: 8px;
+    transition: 0.8s;
+    width: 10px;
+}
+
 
 
 
@@ -116,6 +137,10 @@
 
 .f-6{
     font-size: 1rem;
+}
+
+.f-6-5{
+    font-size: 0.9rem;
 }
 
 .f-7{
@@ -262,10 +287,13 @@
 }
  header nav .menu-items ul.navbar-nav li.nav-item.active a{
     border-bottom: 2px solid var(--secondary);
+    font-family: OpenSans-Bold; 
 }
 
  header nav .menu-items ul.navbar-nav li.nav-item:hover a{
     border-bottom: 2px solid var(--secondary);
+    /* font-family: OpenSans-Bold; */
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -349,7 +377,11 @@
 }
 
  header nav .menu-bar button{
-    color: #252525;
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+ header nav .menu-bar button:hover{
+    color: var(--primary);
     font-size: 1.5rem;
 }
 
