@@ -249,7 +249,7 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     color: #f1f1f1;
     transition: .5s ease;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 24px 24px;
 }
 
 #sectors .image-part-right .content{
@@ -273,7 +273,7 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     color: #f1f1f1;
     transition: .5s ease;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 24px 24px;
 }
 
 
