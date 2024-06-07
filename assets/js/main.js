@@ -14,24 +14,36 @@ $(document).ready(function(){
         $('.menu-bar .toggle-bar').addClass('active')
     })
 
+    $('body').delegate('#header-section li.nav-item','click',(e)=>{
+        $('#header-section li.nav-item').removeClass('active')
+        let nav=e.currentTarget.dataset.nav
+        let nav_id=`#nav-item-${nav}`
+        $(nav_id).addClass('active')
+    })
+
 
     $('body').delegate('.tabs button.btn', 'click',(e)=>{
 
         let tab=e.target.dataset.tab
         
         if(tab==1){
-            $("#button-fill").css("width", "38%");
-            $("#button-fill").css("left", "3%");
+            $("#button-fill").removeClass('tab-btn-2')
+            $("#button-fill").removeClass('tab-btn-3')
+            $("#button-fill").addClass('tab-btn-1')
         }
 
         if(tab==2){
-            $("#button-fill").css("width", "30%");
-            $("#button-fill").css("left", "38%");
+
+            $("#button-fill").removeClass('tab-btn-1')
+            $("#button-fill").removeClass('tab-btn-3')
+            $("#button-fill").addClass('tab-btn-2')
         }
 
         if(tab==3){
-            $("#button-fill").css("width", "32%");
-            $("#button-fill").css("left", "65%");
+
+            $("#button-fill").removeClass('tab-btn-1')
+            $("#button-fill").removeClass('tab-btn-2')
+            $("#button-fill").addClass('tab-btn-3')
         }
 
         let tab_btn_id=`#tab-btn-${tab}`;

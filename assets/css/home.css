@@ -82,6 +82,23 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
     left: 3%;
 }
 
+#what-we-do .tabs #button-fill.tab-btn-1{
+    width: 38%;
+    left: 3%;
+}
+
+#what-we-do .tabs #button-fill.tab-btn-2{
+    width: 30%;
+    left: 38%;
+}
+
+#what-we-do .tabs #button-fill.tab-btn-3{
+    width: 32%;
+    left: 65%;
+}
+
+
+
 #what-we-do .tabs button.btn.active{
     color: var(--primary);
     background-color: transparent;
@@ -381,5 +398,59 @@ border-radius: 50px;
     transition: 0.4s;
     z-index: 2;
 }
+
+}
+
+@media screen and ((min-width: 991px) and (max-width: 1199px)) {
+    #what-we-do .tabs #button-fill.tab-btn-1{
+        width: 34%;
+        left: 8%;
+    }
+    
+    #what-we-do .tabs #button-fill.tab-btn-2{
+        width: 24%;
+        left: 41%;
+    }
+    
+    #what-we-do .tabs #button-fill.tab-btn-3{
+        width: 28%;
+        left: 64%;
+    }
+
+}
+
+@media screen and (min-width: 1399px) {
+    #what-we-do .tabs #button-fill.tab-btn-1{
+        width: 35%;
+        left: 9%;
+    }
+    
+    #what-we-do .tabs #button-fill.tab-btn-2{
+        width: 24%;
+        left: 41%;
+    }
+    
+    #what-we-do .tabs #button-fill.tab-btn-3{
+        width: 30%;
+        left: 61%;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    #what-we-do .tabs #button-fill.tab-btn-1{
+        width: 31%;
+        left: 13%;
+    }
+    
+    #what-we-do .tabs #button-fill.tab-btn-2{
+        width: 23%;
+        left: 41%;
+    }
+    
+    #what-we-do .tabs #button-fill.tab-btn-3{
+        width: 26%;
+        left: 61%;
+    }
 
 }
