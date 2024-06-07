@@ -75,6 +75,10 @@
     transition: 0.4s;
     z-index: 4;
     overflow: hidden;
+
+    height: 54px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 0px 1px #F59A09, 0px 2px 2px -1px rgba(251, 227, 189, 0.35) inset, 0px -2px 2px 0px rgba(233, 217, 193, 0.26) inset, 0px 4px 8px 0px rgba(130, 103, 59, 0.28);
 }
 
 .b-primary:hover{
@@ -242,7 +246,7 @@
 
  header nav .navbar-brand img{
     width:140px !important;
-    height:25px !important;
+    height:22px !important;
     max-width: 150px !important;
 }
 
@@ -379,6 +383,12 @@
  header nav .menu-bar button{
     color: var(--primary);
     font-size: 1.5rem;
+    height: 46px;
+    min-width: 170px !important;
+    padding: 16px 32px;
+    border-radius: 7px;
+    background: #F2F5EB;
+    box-shadow: 0px 0px 0px 1px #E8F1D3, 0px 2px 2px -1px rgba(223, 235, 196, 0.35) inset, 0px -2px 2px 0px rgba(183, 193, 160, 0.26) inset, 0px 4px 8px 0px rgba(137, 160, 83, 0.28);
 }
  header nav .menu-bar button:hover{
     color: var(--primary);

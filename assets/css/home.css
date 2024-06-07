@@ -131,7 +131,7 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
 }
 
 #tab-content .tab-info .image-content .project-development{
-    min-height: 300px;
+    min-height: 388px;
     width: 100%;
     background-image: url('../images/project-dev-1.png');
     overflow: hidden;
@@ -143,7 +143,7 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
 }
 
 #tab-content .tab-info .image-content .technology{
-    min-height: 300px;
+    min-height: 388px;
     width: 100%;
     background-image: url('../images/technology-1.png');
     overflow: hidden;
@@ -155,7 +155,7 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
 }
 
 #tab-content .tab-info .image-content .impact-creation{
-    min-height: 300px;
+    min-height: 388px;
     width: 100%;
     background-image: url('../images/impact-creation-1.png');
     overflow: hidden;
