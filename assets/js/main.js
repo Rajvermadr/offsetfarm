@@ -137,6 +137,62 @@ $(document).ready(function(){
     $('.close').on('click',function(){
         $('#get-in-touch-popup').modal('hide')
     })
+
+    // ============== SEND EMAIL ===========
+    $('#alert-message').html('')
+    $('body').delegate('button[type=submit]','click',function(e){
+        e.preventDefault()
+
+        $(this).html('<div class="loader"></div>')
+
+        let fullname      = $('#full-name').val()
+        let email         = $('#id-email').val()
+        let mobile        = $('#contact-number').val()
+        let message    = $('#id_message').val()
+        emailjs.init({
+            publicKey: 'HQ9L9fQSZ3awnboiw',
+        });
+
+        let templateParams = {
+            name: fullname,
+            email: email,
+            mobile: mobile,
+            message: message,
+          };
+
+        if(fullname !='' && email!='' &&  mobile !=''){
+            emailjs.send('service_d0xnen5', 'template_ejn736b', templateParams).then(
+                (response) => {
+                  console.log('SUCCESS!', response.status, response.text);
+                    $('#letstalkform')[0].reset();
+                    $('#alert-message').removeClass('danger')
+                    $('#alert-message').addClass('success')
+                    $('#alert-message').html('Successfully submited!')
+                    $(this).html('Submit')
+                
+                },
+                (error) => {
+                  console.log('FAILED...', error);
+                  $('#alert-message').removeClass('success')
+                  $('#alert-message').addClass('danger')
+                  $('#alert-message').html('Something went wrong!')
+                  $(this).html('Submit')
+                },
+            );
+        }else{
+            $('#alert-message').removeClass('success')
+            $('#alert-message').addClass('danger')
+            $('#alert-message').html('All fields are required!')
+            $(this).html('Submit')
+        }
+
+       
+    });
+
+   
+    
+      
+      
     
     
 
