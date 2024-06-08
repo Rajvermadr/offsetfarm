@@ -6,6 +6,8 @@
     --black:#252525;
     --light:#fff;
     --light-green:#F2F5EB;
+    --dark:#151411;
+    --green:#04724D;
 }
 
 *{
@@ -164,6 +166,13 @@
 }
 .t-secondary{
     color: var(--secondary);
+}
+
+.t-dark{
+    color: var(--dark);
+}
+.t-green{
+    color: var(--green)
 }
 
 /* =========== LIST ========== */
@@ -425,6 +434,110 @@
     transform: translateY(0px);
     opacity: 1;
 }
+
+/* ============ Projects  ========= */
+#projects .card {
+    background-color: #fff;
+}
+
+#projects .card .card-header{
+    border: none;
+    background: none;
+}
+
+#projects .card .card-header .image-content{
+   overflow: hidden;
+}
+
+#projects .card .card-header img{
+   border-radius: 8px;
+   transition: all 0.3s ease-in-out;
+}
+
+#projects .card .card-header img:hover{
+   transform: scale(1.1);
+}
+
+#projects .card .card-footer{
+    background: none;
+}
+
+#projects .card .card-footer .icon-btn .ic-btn{
+   width: 33px;
+   height: 33px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#projects .card .card-footer .icon-btn .ic-btn .content small{
+   font-size: 3px;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+#projects .card .card-footer .icon-btn .ic-btn .content small.counter{
+   font-size: 0.4rem;
+}
+
+#projects .card .card-footer .icon-btn .ic-btn .icon{
+   font-size: 0.6rem;
+   color: #fff;
+}
+
+#projects .card:hover .card-footer .read-more a{
+   color: var(--secondary);
+}
+
+/* ====== Owl Carousel ===== */
+
+.owl-carousel .owl-nav.disabled {
+    display: block !important;
+    }
+    
+    .owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    top: 45%;
+    left: -20px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary);
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 50px;
+    }
+    
+    .owl-carousel .owl-nav button.owl-prev span{
+        position: relative;
+        top: -8px;
+        right: 1px;
+    }
+    
+    .owl-carousel .owl-nav button.owl-prev:hover{
+        background-color: var(--secondary);
+    }
+    
+    .owl-carousel .owl-nav button.owl-next{
+        position: absolute;
+        top: 45%;
+        right: -20px;
+        width: 30px;
+        height: 30px;
+        background-color: var(--secondary);
+        color: #fff;
+        font-size: 1.8rem;
+        border-radius: 50px;
+    }
+    
+    .owl-carousel .owl-nav button.owl-next:hover{
+        background-color: var(--secondary);
+    }
+    
+    .owl-carousel .owl-nav button.owl-next span{
+        position: relative;
+        top: -8px;
+        right: -1px;
+    }
+    
 
 
 /* ========= FOOTER ======== */

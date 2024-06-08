@@ -159,6 +159,18 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
     border-radius: 8px;
 }
 
+#tab-content  .image-content .clean-cooking-image{
+    min-height: 388px;
+    width: 100%;
+    background-image: url('../images/project-dev-1.png');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    animation: change 6s infinite ease-in-out;
+    border-radius: 8px;
+}
+
 #tab-content .tab-info .image-content .technology{
     min-height: 388px;
     width: 100%;
@@ -189,61 +201,6 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
 }
 
 
-
-
-
-
-#projects .card {
-    background-color: #fff;
-}
-
-#projects .card .card-header{
-    border: none;
-    background: none;
-}
-
-#projects .card .card-header .image-content{
-   overflow: hidden;
-}
-
-#projects .card .card-header img{
-   border-radius: 8px;
-   transition: all 0.3s ease-in-out;
-}
-
-#projects .card .card-header img:hover{
-   transform: scale(1.1);
-}
-
-#projects .card .card-footer{
-    background: none;
-}
-
-#projects .card .card-footer .icon-btn .ic-btn{
-   width: 33px;
-   height: 33px;
-   border-radius: 5px;
-   cursor: pointer;
-}
-
-#projects .card .card-footer .icon-btn .ic-btn .content small{
-   font-size: 3px;
-   color: #fff;
-   text-transform: uppercase;
-}
-
-#projects .card .card-footer .icon-btn .ic-btn .content small.counter{
-   font-size: 0.4rem;
-}
-
-#projects .card .card-footer .icon-btn .ic-btn .icon{
-   font-size: 0.6rem;
-   color: #fff;
-}
-
-#projects .card:hover .card-footer .read-more a{
-   color: var(--secondary);
-}
 
 #sectors .image-part-left .content{
     background-repeat: no-repeat;
@@ -291,56 +248,6 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
     color: #f1f1f1;
     transition: .5s ease;
     border-radius: 0 0 24px 24px;
-}
-
-
-/* ========= OWL CAROWSEL NAV=========== */
-.owl-carousel .owl-nav.disabled {
-display: block !important;
-}
-
-.owl-carousel .owl-nav button.owl-prev{
-position: absolute;
-top: 45%;
-left: -20px;
-width: 30px;
-height: 30px;
-background-color: var(--secondary);
-color: #fff;
-font-size: 1.8rem;
-border-radius: 50px;
-}
-
-.owl-carousel .owl-nav button.owl-prev span{
-    position: relative;
-    top: -8px;
-    right: 1px;
-}
-
-.owl-carousel .owl-nav button.owl-prev:hover{
-    background-color: var(--secondary);
-}
-
-.owl-carousel .owl-nav button.owl-next{
-    position: absolute;
-    top: 45%;
-    right: -20px;
-    width: 30px;
-    height: 30px;
-    background-color: var(--secondary);
-    color: #fff;
-    font-size: 1.8rem;
-    border-radius: 50px;
-}
-
-.owl-carousel .owl-nav button.owl-next:hover{
-    background-color: var(--secondary);
-}
-
-.owl-carousel .owl-nav button.owl-next span{
-    position: relative;
-    top: -8px;
-    right: -1px;
 }
 
 
