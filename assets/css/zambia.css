@@ -2,6 +2,19 @@ body{
     background: #F2F5EB;
 }
 
+body .container{
+    max-width: 1100px !important;
+}
+
+body #header-section .container{
+    max-width: 1140px;
+}
+
+#projects .card .card-body{
+    min-height: 240px;
+}
+
+
 .sub-heading{
     font-family:OpenSans-SemiBold; 
     color: var(--secondary);

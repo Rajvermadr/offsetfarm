@@ -18,6 +18,10 @@
     font-size: 900;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 
 
@@ -318,6 +322,7 @@
     transition: 0.1s;
     text-transform: capitalize;
     color: var(--light);
+    font-family:OpenSans-SemiBold; 
 }
 
 .fixed-header  header nav .menu-items ul.navbar-nav li.nav-item a{
@@ -394,8 +399,8 @@
  header nav .menu-bar button{
     color: var(--primary);
     font-size: 1.5rem;
-    height: 46px;
-    min-width: 170px !important;
+    height: 51px;
+    min-width: 165px !important;
     padding: 16px 32px;
     border-radius: 7px;
     background: #F2F5EB;
@@ -447,6 +452,7 @@
 
 #projects .card .card-header .image-content{
    overflow: hidden;
+   border-radius: 8px;
 }
 
 #projects .card .card-header img{
@@ -454,7 +460,7 @@
    transition: all 0.3s ease-in-out;
 }
 
-#projects .card .card-header img:hover{
+#projects .card:hover .card-header img{
    transform: scale(1.1);
 }
 

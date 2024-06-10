@@ -2,6 +2,20 @@ body{
     background: #F2F5EB;
 }
 
+
+
+body .container{
+    max-width: 1100px !important;
+}
+
+body #header-section .container{
+    max-width: 1140px;
+}
+
+#projects .card .card-body{
+    min-height: 240px;
+}
+
 .sub-heading{
     font-family:OpenSans-SemiBold; 
     color: var(--secondary);
@@ -67,14 +81,14 @@ header nav .menu-bar .get-started {
 }
 
 #clean-cooking  .image-content .clean-cooking-image{
-    min-height: 350px;
+    height: 350px;
     width: 100%;
     background-image: url('../images/nepal-project-img-1.png');
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    animation: change 6s infinite ease-in-out;
+    animation: change 10s linear infinite;
     border-radius: 24px;
 }
 
@@ -107,9 +121,11 @@ header nav .menu-bar .get-started {
     }
     50%{
         background-image: url('../images/nepal-project-img-2.png');
+        
     }
 
     100%{
         background-image: url('../images/nepal-project-img-3.png');
     }
+
 }
