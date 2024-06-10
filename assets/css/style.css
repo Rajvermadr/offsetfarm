@@ -644,6 +644,12 @@ button[type=submit]{
         border-top: 0px solid #f3f3f3;
     }
 
+    .footer .container.footer-info .col-12 {
+        padding: 1.5rem !important;
+    }
+
+
+
     .footer .container.footer-info .footer-content .brand-logo{
         position: relative;
         top: 0px;
