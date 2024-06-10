@@ -396,7 +396,7 @@ a{
     color: #fff;
 }
 
- header nav .menu-bar button{
+ header nav .menu-bar button.get-started{
     color: var(--primary);
     font-size: 1.5rem;
     height: 51px;
@@ -630,9 +630,26 @@ button[type=submit]{
         font-size: 1.5rem;
     }
 
+
+    header nav .menu-bar button.get-started {
+        color: var(--primary);
+        font-size: 1.2rem;
+        height: 51px;
+        min-width: 120px !important;
+        padding: 16px 2px;
+    }
+
     #what-we-do .tabs {
         padding: 10px 0px !important;
         border-radius: 5px !important;
+    }
+
+    #about-sub-section-1 .image-content img{
+        min-height: auto !important;
+    }
+
+    #tab-content .tab-info .image-content .project-development {
+        min-height: 310px !important;
     }
 
     #sectors .image-part-left .content{
