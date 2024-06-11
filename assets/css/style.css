@@ -358,7 +358,7 @@ a{
  header nav .menu-items.mobile{
     position: fixed;
     left: -100%;
-    top: 90px;
+    top: 0px;
     width: 100%;
     z-index: 9;
     height: 100%;
@@ -420,11 +420,17 @@ a{
     align-items: center;
     border: 0;
     padding: 0;
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--light);
     background-color: var(--primary);
-    width: 60px;
-    height: 60px;
+    width: 34px;
+    height: 34px;
+}
+
+.toggle-close{
+    font-size: 2rem;
+    color: var(--light);
+    background-color: var(--primary);
 }
 
 /* ============ Reveal ========= */
@@ -630,6 +636,10 @@ button[type=submit]{
         font-size: 1.5rem;
     }
 
+    input.form-control{
+        height: 40px;
+    }
+
 
     header nav .menu-bar button.get-started {
         color: var(--primary);
@@ -648,9 +658,7 @@ button[type=submit]{
         min-height: auto !important;
     }
 
-    #tab-content .tab-info .image-content .project-development {
-        min-height: 310px !important;
-    }
+
 
     #sectors .image-part-left .content{
         min-height: 292px !important;

@@ -12,6 +12,11 @@ body #header-section .container{
     max-width: 1140px;
 }
 
+header nav .menu-bar .get-started {
+    color: var(--light) !important;
+    background-color: var(--secondary) !important;
+}
+
 #projects .card .card-body{
     min-height: 240px;
 }
@@ -106,6 +111,27 @@ header nav .menu-bar .get-started {
 #benefits .card .image-content img{
     height: 50px;
     width: 50px;
+}
+
+
+/* =========== RESPONSIVE ============ */
+@media screen and (max-width: 768px) {
+    #top-card-banner .card .card-body{
+        padding: 1.4rem !important;
+    }
+
+    #top-card-banner .card .card-footer .col.p-4.px-5{
+        padding: 1.4rem !important;
+    }
+
+    #top-card-banner .card .card-header .image-content img{
+        height: 300px;
+    }
+
+    #clean-cooking .image-content .clean-cooking-image {
+        height: 256px;
+    }   
+
 }
 
 

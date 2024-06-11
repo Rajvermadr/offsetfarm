@@ -7,7 +7,7 @@ $(document).ready(function(){
         $('.menu-bar .toggle-close').addClass('active')
     })
 
-    $('.menu-bar .toggle-close').on('click',function(e){
+    $('.toggle-close').on('click',function(e){
         e.preventDefault()
         $('.menu-items.mobile').removeClass('active')
         $(this).removeClass('active')
