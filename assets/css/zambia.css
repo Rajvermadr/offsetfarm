@@ -118,7 +118,7 @@ header nav .menu-bar .get-started {
 /* =========== RESPONSIVE ============ */
 @media screen and (max-width: 768px) {
     #top-card-banner .card .card-header .image-content img{
-        height: 300px;
+        height: 250px;
     }
     #top-card-banner .card .card-body{
         padding: 1.4rem !important;
@@ -129,7 +129,7 @@ header nav .menu-bar .get-started {
     }
 
     #clean-cooking .image-content .clean-cooking-image {
-        min-height: 256px;
+        min-height: 230px;
     }
 
    
