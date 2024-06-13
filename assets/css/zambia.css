@@ -132,6 +132,10 @@ header nav .menu-bar .get-started {
         min-height: 230px;
     }
 
+    #clean-cooking .card.p-5{
+        padding: 2rem !important;
+    }
+
    
 
 }

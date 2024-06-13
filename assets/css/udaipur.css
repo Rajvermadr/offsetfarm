@@ -166,6 +166,9 @@ header nav .menu-bar .get-started {
     #natural-bio .image-content .natural-bio-image {
         min-height: 230px;
     }
+    #clean-cooking .card.p-5{
+        padding: 2rem !important;
+    }
 
 
 }
