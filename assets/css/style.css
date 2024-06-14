@@ -554,8 +554,8 @@ a{
 
 /* ========= FOOTER ======== */
 .footer .container.footer-info{
-    border-bottom:1px solid #f3f3f3 ;
-    border-top:1px solid #f3f3f3 ;
+    border-bottom:1px solid #f2f5eb80;
+    border-top:1px solid #f2f5eb80;
 }
 
 .footer .container.footer-info .footer-content .brand-logo {

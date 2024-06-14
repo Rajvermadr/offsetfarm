@@ -174,7 +174,7 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
 #tab-content .tab-info .image-content .technology{
     min-height: 388px;
     width: 100%;
-    background-image: url('../images/technology-1.png');
+    background-image: url('../images/technology-img-1.png');
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -268,14 +268,11 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
 
 @keyframes technology{
     0%{
-        background-image: url('../images/technology-1.png');
-    }
-    50%{
-        background-image: url('../images/technology-2.png');
+        background-image: url('../images/technology-img-1.png');
     }
 
     100%{
-        background-image: url('../images/technology-3.png');
+        background-image: url('../images/technology-img-2.png');
     }
 }
 
