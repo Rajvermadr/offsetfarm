@@ -21,6 +21,12 @@ $(document).ready(function(){
         $(nav_id).addClass('active')
     })
 
+    $('body').delegate('#header-section .menu-items.mobile.active li.nav-item a','click',(e)=>{
+        $('.menu-items.mobile').removeClass('active')
+        $('.toggle-close').removeClass('active')
+        $('.menu-bar .toggle-bar').addClass('active')
+    })
+
 
     $('body').delegate('.tabs button.btn', 'click',(e)=>{
 
