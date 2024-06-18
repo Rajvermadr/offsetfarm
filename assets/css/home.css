@@ -299,7 +299,7 @@ linear-gradient(182deg, rgba(4, 114, 77, 0.027) 1.69%, rgba(0, 0, 0, 0) 98.34%);
 #banner-part #myVideo {
     bottom: 100px;
     min-width: 100%;
-    max-height: calc(100vh - 100px) !important;
+    /* max-height: calc(100vh - 100px) !important; */
 }
 
 #about-sub-section .card{
